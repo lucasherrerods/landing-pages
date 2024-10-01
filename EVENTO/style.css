@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background: linear-gradient(68.15deg, #09151f 80.61%, #092a41 16.62%);
+    font-size: 100%;
+    color: #fdfdfdfd;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.titulos {
+    text-align: center;
+}
+
+.titulo-cabecalho {
+    font-family: "Righteous", sans-serif;
+}
+
+.subtitulo-cabecalho {
+    font-size: 15px;
+    color: #00ff88;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-right: 30px;
+}
+
+.menu-items {
+    font-family: "Righteous", sans-serif;
+    color: #00ff88;
+    border-bottom: 3px solid #00ff88;
+}
+
+.menu-items:hover {
+    color: #f0ffffde;
+    outline: none;
+    border-bottom: 3px solid #f0ffffde;;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 110px;
+}
+
+.conteudo-esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo-descricao {
+    font-family: "Righteous", sans-serif;
+    text-align: center;
+}
+
+.texto-descricao {
+    font-size: 15px;
+}
+
+.agenda {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo-agenda {
+    font-family: "Righteous", sans-serif;
+}
+
+.lista {
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #00ff88;
+}
+
+.conteudo-direita {
+    width: 50%;
+    padding: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-formulario {
+    margin-bottom: 15px;
+    font-family: "Righteous", sans-serif;
+}
+
+.formulario label {
+    width: 220px;
+    font-weight: 500;
+}
+
+.input-form {
+    width: 220px;
+    border: none;
+    background-color: #f0ffffde;
+    padding: 7px;
+    border-radius: 7px;
+    outline: none;
+}
+
+.required-point {
+    color: #d80835;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #00ff88;
+    color: #09151f;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-submit:hover {
+    background-color: rgba(0, 255, 149, 0.65);
+    color: #f0ffffde;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.texto-rodape {
+    font-family: "Righteous", sans-serif;
+}
