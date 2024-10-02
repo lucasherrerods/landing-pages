@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #fdfdfd;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #071060;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #3a10e0;    ;
+}
+
+li {
+    list-style: none;
+}
+
+#nav-menu {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+#nav-menu a {
+    font-family: "Poppins", sans-serif;
+}
+
+#nav-links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+#nav-links img {
+    width: 150px;
+    cursor: pointer;
+}
+
+#nav-links ul {
+    display: flex;
+    gap: 3rem;
+}
+
+#nav-btn {
+    display: flex;
+    gap: 2rem;
+}
+
+#nav-btn #company,
+#nav-btn-login {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+#nav-btn #company {
+    background-color: #071060;
+}
+
+#nav-btn-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #3a10e0;
+    cursor: pointer;
+}
+
+#nav-btn-login i,
+#nav-btn-login a {
+    background: none;
+    color: #fff;
+}
+
+#nav-btn #company:hover,
+#nav-btn-login:hover,
+.agendar ul:hover {
+    opacity: 0.8;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);  
+    height: 28rem;
+}
+
+#left-main {
+    width: 40vw;
+    padding: 2rem 0;
+    border-radius: 6px;
+}
+
+#left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #3a10e0;
+    font-family: Helvetica;
+}
+
+#left-content h1 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+#left-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#search-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+#search-container #search {
+    border: 2px solid #707070;
+    width: 360px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+#left-content input[type="submit"] {
+    background-color: #071060;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 17px;
+    font-family: "Poppins";
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#left-content input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+#right-main {
+    background: none;
+    height: 100%;
+}
+
+#right-main img {
+    background: none;
+    height: 100%;
+}
+
+.agenda-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.agendar ul{
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    background-color: #e2dffa;
+    color: #071060;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.agendar #exame,
+.agendar #exame li {
+    background-color: #feefec;
+    color: #a64a37;
+}
+
+.agendar #vacina,
+.agendar #vacina li {
+    background-color: #e5faf4;
+    color: #133e47;
+}
+
+.agendar #checkup,
+.agendar #checkup li {
+    background-color: #fdf7e4;
+    color: #a07c06;
+}
+
+.agendar i {
+    font-size: 22px;
+    background: none;
+    margin-bottom: 15px;
+}
+
+.agendar .mark {
+    font-size: 13px;
+    text-transform: lowercase;
+    margin-bottom: 6px;
+}
+
+.agendar .description {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.agendar li {
+    background-color: #e2dffa;
+}
+
+.card-container {
+    width: 80vw;
+    background: #f1f1f1;
+    overflow: hidden;
+    min-height: 500px;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 25% 35% 40%;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background: none;
+}
+
+#card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    line-height: 40px;
+}
+
+#card1 h2,
+#card1 p,
+#card1 input {
+    font-family: "Rubik";
+}
+
+#card1 h2 {
+    font-size: 30px;
+    color: #3a10e0;
+}
+
+#card1 #assinatura {
+    padding: 15px 30px;
+    background-color: #3a10e0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Poppins";
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#card2,
+#card2 img {
+    width: 100%;
+    background: none;
+    border-radius: 15px;
+}
+
+#card3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background: none;
+}
+
+.card3-child {
+    background: none;
+    display: flex;
+    gap: 15px;
+}
+
+.card3-child div {
+    width: 200px;
+    height: 150px;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.card3-child i {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #3a10e0;
+}
+
+.card3-child p {
+    line-height: 22px;
+}
+
+#saibamais p {
+    margin-bottom: 20px;
+}
+
+#saibamais #blog {
+    font-size: 20px;
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+#saibamais i {
+    cursor: pointer;
+}
+
+#footer-container {
+    width: 100vw;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    gap: 40px;
+}
+
+#footer-container #logo img {
+    width: 220px;
+}
+
+#footer-container h2 {
+    color: #3a10e0;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+#footer-container p {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+
