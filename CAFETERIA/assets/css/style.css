@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #FAF0E6;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 80px;
+}
+
+#navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#navbar-left i {
+    font-size: 25px;
+    color: #FF7F50;
+}
+
+#navbar-left h2 {
+    color: #543c2a; 
+    text-transform: uppercase;
+    font-family: "Barlow", system-ui;
+}
+
+#navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+#navbar-right a {
+    margin-right: 5rem;
+    color: #FF7F50;
+    font-weight: bold;
+    transform: 0.5s;
+}
+
+#navbar-right a:hover {
+    color: #ff7f50b5;
+    border-bottom: 3px solid #ff7f50b5;   
+}
+
+#banner-content {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#left-content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#left-content h1 {
+    color: #e0c10c;
+}
+
+#left-content p {
+    color: #2F4F4F;
+    font-weight: 500;
+}
+
+#right-content {
+    width: 80%;
+    position: relative;
+    display: inline-block;
+}
+
+#right-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: block;
+}
+
+#right-content .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(245, 222, 179, 0.5)
+}
+
+#aboutus {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+.title-sections {
+    font-family: "Barlow", system-ui;
+    color: rgb(218, 31, 31);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+#resume-container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+
+#left-resume {
+    text-align: center;
+}
+
+#left-resume img{
+    width: 50%;
+    border-radius: 4px;
+}
+
+#right-resume {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    line-height: 2rem;
+    text-align: center;    
+}
+
+#right-resume p {
+    font-family: "Barlow", system-ui;
+}
+
+#menu-container,
+#customer-reviews,
+#location {
+    width: 90%;
+    padding: 2rem;
+}
+
+#menu-list-top,
+#menu-list-bottom,
+#review-container,
+#footer-container {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+#menu-list-top {
+    margin-bottom: 2.5rem;
+}
+
+.menu-item,
+.reviews {
+    width: 20%;
+    text-align: center;
+}
+
+.menu-item img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.reviews .review-img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.reviews .review-icon {
+    width: 75%;
+}
+
+.menu-item h3,
+.reviews h3 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.menu-item p{
+    color: #2F4F4F;
+}
+
+.reviews p {
+    height: 8rem;
+    color: #2F4F4F;
+    font-style: italic;
+}
+
+.reviews h3 {
+    margin-top: 1rem;
+    text-align: end;
+}
+
+#location .title-sections {
+    text-align: center;
+}
+
+#location-container {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+}
+
+#left-location {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+}
+
+#left-location p {
+    font-family: "Barlow", system-ui;
+    font-size: 18px;
+}
+
+#address {
+    font-weight: bold;
+    color: rgb(218, 31, 31);
+}
+
+#right-location {
+    width: 40%;
+}
+
+#footer-container {
+    align-items: center;
+    background-color: #2F4F4F;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+#left-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.social-medias {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-medias i {
+    color: #FF7F50;
+}
+
+#right-footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#right-footer i {
+    font-size: 25px;
+    color: #FF7F50;
+}
+
+#right-footer h2 {
+    text-transform: uppercase;
+    font-family: "Barlow", system-ui;
+}
