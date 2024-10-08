@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    justify-content: space-between;
+}
+
+#left-navbar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    gap: 2rem;
+}
+
+#left-navbar img {
+    width: auto!important;
+    height: 5rem;
+    cursor: pointer;
+}
+
+#left-navbar h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 2rem; 
+}
+
+#right-navbar {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 5rem;
+}
+
+#navbar img {
+    width: 20rem;
+}
+
+#navbar i {
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+#right-navbar #shop {
+    font-size: 1.8rem;
+}
+
+#banner {
+    padding: 0 5rem;
+    width: 100%;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+#titles-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 5.5rem;
+}
+
+#titles-banner h1 {
+    font-size: 83px;
+    font-weight: 500;
+}
+
+#titles-banner p {
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+#titles-banner input[type="button"] {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    background: none;
+    color: #fff;
+    font-family: "Poppins";
+    font-weight: 300;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#titles-banner input[type="button"]:hover {
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+#collection-container {
+    padding: 5rem;
+    width: 100%;
+}
+
+.collection-cap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection {
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    height: auto;
+}
+
+.collection img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.collection .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.collection .view {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.collection:hover .img-hover {
+    opacity: 1;
+}
+
+.collection:hover .img-default {
+    opacity: 0;
+}
+
+.collection:hover .view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection h3,
+.collection p {
+    position: relative;
+}
+
+.collection h3 {
+    font-family: "Poppins";
+    font-size: 22px;
+    margin-top: 3rem;
+}
+
+.collection p {
+    font-size: 22px;
+    font-family: "Poppins";
+    font-weight: 300;  
+}
+
+#collection-container input[type="button"] {
+    border: 1px solid #000;
+    font-size: 20px;
+    padding: 10px 30px;
+    background: none;
+    color: #000;
+    font-family: "Poppins";
+    font-weight: 300;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+#collection-container input[type="button"]:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#btn {
+    text-align: center;
+}
